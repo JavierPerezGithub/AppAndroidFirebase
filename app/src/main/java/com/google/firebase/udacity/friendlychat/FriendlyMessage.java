@@ -19,13 +19,23 @@ public class FriendlyMessage {
 
     private String text;
     private String name;
+    private String fotoUrl;
+
+    public String getFotoUrl() {
+        return fotoUrl;
+    }
+
+    public void setFotoUrl(String fotoUrl) {
+        this.fotoUrl = fotoUrl;
+    }
 
     public FriendlyMessage() {
     }
 
-    public FriendlyMessage(String text, String name) {
+    public FriendlyMessage(String text, String name, String fotoUrl) {
         this.text = text;
         this.name = name;
+        this.fotoUrl = fotoUrl;
     }
 
     public String getText() {
